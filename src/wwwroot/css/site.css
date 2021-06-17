@@ -1,0 +1,104 @@
+﻿html {
+    box-sizing: border-box;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    color: #333;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.content {
+    min-height: 100%;
+}
+
+.content__inside {
+    padding: 20px 20px 50px;
+}
+
+.header {
+    /*height: 50px;*/
+    color: #fff;
+    background-color: #333;
+    padding: .2em;
+}
+
+.footer {
+    height: 50px;
+    margin-top: -50px;
+    color: #fff;
+    background-color: #333;
+    padding: 1em;
+}
+
+.page-info {
+    font-weight: bold;
+    background-color: lightyellow;
+    padding: .5em;
+}
+
+.menu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    color: #fff;
+}
+
+.menu__item {
+    float: left;
+}
+
+.menu__item--active {
+    background-color: #333;
+}
+
+.menu__item span {
+    display: block;
+    text-align: center;
+    padding: 16px;
+    text-decoration: none;
+}
+
+.menu__item a {
+    display: block;
+    text-align: center;
+    padding: 16px;
+    text-decoration: none;
+    color: inherit;
+}
+
+.menu__item a:hover {
+    background-color: #111111;
+}
+
+.menu--inline {
+    margin: auto;
+    display: inline-block;
+}
+
+.menu--inverse {
+    background-color: #fff;
+    color: #333;
+}
+
+.menu--inverse .menu__item--active {
+    background-color: #eee;
+}
+
+.menu--inverse .menu__item a:hover {
+    background-color: #eee;
+}
+
+.submenu {
+    margin-bottom: 1em;
+}

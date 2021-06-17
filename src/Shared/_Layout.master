@@ -1,0 +1,55 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="_Layout.master.cs" Inherits="WebFormsVue3Template.Web.Shared._Layout" %>
+
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+<head runat="server">
+    <title>DTCO</title>
+
+    <link href="/wwwroot/css/site.css" rel="stylesheet"/>
+    <link href="/wwwroot/dist/css/app.css" rel="stylesheet"/>
+
+    <!-- Insert extra "head" content Here -->
+    <asp:ContentPlaceHolder ID="head" runat="server"/>
+</head>
+<body>
+
+<div class="content">
+    <header class="header">
+        <ul class="menu">
+            <li class="menu__item">
+                <a href="/Pages/Default.aspx">Home</a>
+            </li>
+            <li class="menu__item">
+                <a href="/Pages/Page1.aspx">Page1</a>
+            </li>
+            <li class="menu__item">
+                <a href="/Pages/Page2.aspx">Page2</a>
+            </li>
+            <li class="menu__item">
+                <a href="/Pages/App.aspx">App</a>
+            </li>
+        </ul>
+    </header>
+
+    <div class="content__inside">
+        <form runat="server">
+            <main id="app">
+                <asp:ContentPlaceHolder ID="main" runat="server"/>
+            </main>
+        </form>
+    </div>
+</div>
+
+<footer class="footer">
+    <div>All Rights Reserved</div>
+</footer>
+
+<script src="/wwwroot/dist/js/chunk-vendors.js"></script>
+<script src="/wwwroot/dist/js/app.js"></script>
+
+<!-- Insert "script" tags Here -->
+<asp:ContentPlaceHolder ID="body" runat="server"/>
+
+</body>
+</html>
